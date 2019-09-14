@@ -249,17 +249,18 @@ export { CountUp };
 
 
 const options1 = {
-    duration: 3,
+    duration: 5,
     suffix: ' %',
 };
 
 const options2 = {
-    duration: 3,
+    duration: 6,
 };
 
 const options3 = {
-    duration: 3,
-    suffix: ' year',
+    duration: 12,
+    prefix: 'In ',
+    suffix: ' years',
 };
 
 
