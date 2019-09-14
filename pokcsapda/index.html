@@ -60,12 +60,14 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm ">
-        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <span class="navbar-brand d-flex flex-fill" style="border: 1px solid black;">logo</span>
-        <div class="navbar-collapse collapse" id="navbar">
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav justify-content-end d-flex flex-fill">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Our campaign</a>
@@ -80,8 +82,14 @@
                     <a class="nav-link" href="#">Get involved</a>
                 </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </nav>
+
+
 
 
     <div class="container-fluid hero">
@@ -136,8 +144,8 @@
         <div class="row align-items-center" style="height: 500px;">
             <div class="col">
                 <h1>Machines</h1>
-                <div class="row align-items-middle">
-                    <div class="col">
+                <div class="row justify-content-center align-items-middle">
+                    <div class="col text-center">
                         <img src=""></img>
                         <h4>Machine 1</h4>
                         <div>Lorem ipsum dolor sit amet</div>
@@ -152,7 +160,7 @@
                             <div>Phasellus a justo non nisi.</div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col text-center">
                         <img src=""></img>
                         <h4>Machine 1</h4>
                         <div>Lorem ipsum dolor sit amet</div>
@@ -188,5 +196,4 @@
 
 
 </body>
-
 </html>
