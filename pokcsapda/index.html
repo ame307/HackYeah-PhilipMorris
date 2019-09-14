@@ -5,6 +5,7 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="./img/favicon.png"></link>
     <title>NOFILTER</title>
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.min.css">
@@ -33,6 +34,12 @@
             color: grey;
         }
 
+        body {
+            min-height: 75rem; 
+            max-width: 100%;
+            overflow-x: hidden
+        }
+
         li {
             padding: 20px;
         }
@@ -50,6 +57,7 @@
         }
 
         .welcome-text {
+            margin-top: -7rem;
             font-size: 26px;
         }
 
@@ -68,9 +76,11 @@
 </head>
 
 <body>
-
+    <link rel="icon" href="./img/favicon.png">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffd607;">
-        <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="">
+            </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -103,9 +113,13 @@
                 <p class="hero-text">
                     <strong>
                         Don't be a <br>
-                        FLICKING idiot
+                        <span style="font-weight: 900;">FLICKING</span> idiot
                     </strong>
                 </p>
+                <p style="padding-left: 5rem;">Think about us.</p>
+            </div>
+            <div class="col-4">
+                    <img src="./img/rak.png" alt="" style="height: 90vh;">
             </div>
         </div>
     </div>
@@ -146,7 +160,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <img src="" alt="">
+                <img src="./img/madar.png" alt="">
             </div>
         </div>
     </div>
@@ -284,4 +298,6 @@
                 </div>
             </div>        
         </div>
+    </div>
+  
     </html>
