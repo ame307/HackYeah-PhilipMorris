@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-
 
     <style>
         a:link {
@@ -40,27 +40,38 @@
         }
 
         .navbar {
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 5rem;
+            padding-right: 5rem;
 
         }
 
         .item {
             font-weight: bold;
             color: #f66e96;
+            font-size: 4rem;
         }
 
         .welcome-text {
             font-size: 26px;
         }
+
+        .hero-text {
+            font-size: 8rem;
+            padding-left: 5rem;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            color: #35357d !important;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
     </style>
-
-
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffd607;">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,29 +104,33 @@
 
 
     <div class="container-fluid hero">
-        <div class="row justify-content-start align-items-center" style="height: 500px; background-color: #ffd607;">
+        <div class="row justify-content-start align-items-center" style="height: 90vh; background-color: #ffd607;">
             <div class="col-8 welcome-text" style="color: #35357d">
-                Don't be a
-                <strong>FLICKING</strong> idiot
+                <p class="hero-text">
+                    <strong>
+                        Don't be a <br>
+                        FLICKING idiot
+                    </strong>
+                </p>
             </div>
         </div>
     </div>
 
 
-    <div class="container text-center">
+    <div class="container-fluid text-center" style="width:100%">
         <div class="row justify-content-center align-items-center" style="height: 500px">
             <div class="row justify-content-center align-items-start">
-                <div class="col">
+                <div class="col-lg-4">
                     <h1 class="item">84%</h1>
                     <div>Percentage of butts that are being littered</div>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-4">
                     <h1 class="item">150 000</h1>
                     <div>butts are littered per second</div>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-4">
                     <h1 class="item">10 years</h1>
                     <div>there may be more cigarette butts in the ocean than fish</div>
                 </div>
@@ -144,7 +159,7 @@
         <div class="row align-items-center" style="height: 500px;">
             <div class="col">
                 <h1>Machines</h1>
-                <div class="row justify-content-center align-items-middle">
+                <div class="row align-items-middle">
                     <div class="col text-center">
                         <img src=""></img>
                         <h4>Machine 1</h4>
@@ -193,7 +208,5 @@
             </div>
         </div>
     </div>
-
-
 </body>
 </html>
