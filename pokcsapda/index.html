@@ -93,8 +93,8 @@
         }
 
         .flicking-text {
-            font-size: 10rem; 
-            font-weight: 900; 
+            font-size: 10rem;
+            font-weight: 900;
             line-height: 7rem;
         }
 
@@ -166,40 +166,55 @@
             height: 90vh;
         }
 
-        .kep1 {
-            
-        }
-
         .arrow-first {
-            
+
             transform: rotate(-35deg);
         }
 
-        .kep2 {
-           
-        }
-
         .arrow-second {
-            
+
             transform: rotate(20deg);
         }
 
-        .kep3 {
-            
+        @media (max-width: 1200px) {
+            #welcome-img {
+                visibility: hidden;
+            }
+
+
+
         }
 
 
-        @media (min-width: 992px) {
-            .item{
+        @media (max-width: 992px) {
+            .item {
                 margin-top: 10rem;
             }
 
-            .arrow-first{
+            .arrow-first {
                 visibility: hidden;
             }
 
-            .arrow-second{
+            .arrow-second {
                 visibility: hidden;
+            }
+
+            .welcome-text {
+                font-size: 16px;
+                color: #35357d;
+                padding-left: 2rem;
+            }
+
+            .hero-text {
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: 3rem;
+            }
+
+            .flicking-text {
+                font-size: 7rem;
+                font-weight: 900;
+                line-height: 7rem;
             }
 
         }
@@ -306,7 +321,7 @@
         </div>
     </div>
 
-    <div class="container" style="height: 100vh;" id="machines">
+    <div class="container" style="height: 90vh;" id="machines">
         <div class="row align-items-center">
             <div class="col">
                 <h1 class="menu-text">Machines</h1>
@@ -314,62 +329,47 @@
                     <div class="col-lg-8 text-center">
                         <img src="img/machine.png" alt="" ">
                         <div>
-                            <h5 class="pink-colored">
-                                Recycling machine
-                            </h5>
-                        </div>
-                        <div>
-                            <p class="grey-colored">
-                                Get locally collectible rewards such<br>
-                                as discount vouchers, donation<br>
-                                to charities or other<br>
-                                kinds of discounts.
-                            </p>
-                        </div>
+                            <h5 class=" pink-colored">
+                        Recycling machine
+                        </h5>
                     </div>
-                    <div class="col-lg-4 text-center">
-                        <img src="img/disposer.png" alt="">
-                        <div>
-                            <h5 class="pink-colored">Filter disposer</h5>
-                        </div>
-                        <div>
-                            <p class="grey-colored">
-                                Throw your butts into one of out<br>
-                                frequently placed disposer and<br>
-                                receive a nice message that<br>
-                                makes your day brighter.
-                            </p>
-                        </div>
+                    <div>
+                        <p class="grey-colored">
+                            Get locally collectible rewards such<br>
+                            as discount vouchers, donation<br>
+                            to charities or other<br>
+                            kinds of discounts.
+                        </p>
                     </div>
                 </div>
-                <div class="col text-center">
-                    <img data-aos="fade-down-left" src="img/disposer.png" alt="" ">
-                        <div>
-                            <h5 class=" pink-colored">Filter disposer</h5>
-                </div>
-                <div>
-                    <p sclass="purple-colored">
-                        Throw your butts into one of out<br>
-                        frequently placed disposer and<br>
-                        receive a nice message that<br>
-                        makes your day brighter.
-                    </p>
+                <div class="col-lg-4 text-center">
+                    <img src="img/disposer.png" alt="">
+                    <div>
+                        <h5 class="pink-colored">Filter disposer</h5>
+                    </div>
+                    <div>
+                        <p class="grey-colored">
+                            Throw your butts into one of out<br>
+                            frequently placed disposer and<br>
+                            receive a nice message that<br>
+                            makes your day brighter.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    </div>
 
-    <div class="container" style="margin-bottom: 8rem; margin-top: 10rem;" id="getInvolved">
+    <div class="container" style="margin-bottom: 8rem;" id="getInvolved">
         <div class="row justify-content-center align-items-center" style="height: auto; margin-bottom: 3rem;">
             <div class="col">
                 <h1 class="menu-text">Get involved</h1>
                 <div class="row justify-content-start align-items-center">
                     <div class="col-2 text-center kep1">
                         <div>
-                            <img data-aos="zoom-out-right" src="img/cigi.png" class="mb-3" alt=""
-                                height="250px" width="250px">
+                            <img data-aos="zoom-out-right" src="img/cigi.png" class="mb-3" alt="" height="250px"
+                                width="250px">
                             <h5 class="menu-text">
                                 Collect the butts
                             </h5>
@@ -429,7 +429,7 @@
         </div>
     </div>
     <div class="container_fluid text-center" style="margin-top: 3rem;">
-        <img src="img/footer.png" alt="">
+        <img style="max-width: 100%; height: auto" src="img/footer.png" alt="">
     </div>
 
     <script>
