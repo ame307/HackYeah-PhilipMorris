@@ -61,7 +61,17 @@
         .navbar {
             padding-left: 5rem;
             padding-right: 5rem;
+        }
 
+        .yellow-background-colored{
+            background-color: #ffd607 !important;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            color: #35357d !important;
+            font-size: 1.5rem;
+            margin-right: 1rem;
         }
 
         .item {
@@ -72,18 +82,26 @@
 
         .welcome-text {
             font-size: 26px;
+            color: #35357d; 
+            padding-left: 5rem; 
         }
 
         .hero-text {
             font-size: 8rem;
             font-weight: 700;
+            line-height: 10rem;
         }
 
-        .nav-link {
-            font-weight: bold;
+        .flicking-text {
+            font-size: 10rem; 
+            font-weight: 900; 
+            line-height: 5rem;
+        }
+
+        .menu-text {
+            font-weight: 700; 
+            margin-bottom: 1rem;
             color: #35357d !important;
-            font-size: 1.5rem;
-            margin-right: 1rem;
         }
 
         #return-to-top {
@@ -108,6 +126,7 @@
             z-index: 0;
             
         }
+
         #return-to-top i {
             color: #fff;
             margin: 0;
@@ -121,12 +140,42 @@
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
         }
+
         #return-to-top:hover {
             background: #35357d;
         }
+
         #return-to-top:hover i {
             color: #fff;
             top: 5px;
+        }
+
+        .purple-colored{
+            color: #35357d !important;
+        }
+
+        .pink-colored{
+            color: #f66e96 !important;
+        }
+
+        .grey-colored{
+            color: #878787 !important;
+        }
+
+        .vh-90 {
+           height: 90vh;
+        }
+
+        .arrow-first {
+            left: -120px; 
+            top: 0px; 
+            transform: rotate(12deg);
+        }
+
+        .arrow-second {
+            left: -320px; 
+            top: 30px;
+            transform: rotate(65deg);
         }
 
 
@@ -136,10 +185,9 @@
 <body>
     <link rel="icon" href="./img/favicon.png">
 
-    <!-- Return to Top -->
     <a class="scroll_to" href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffd607;" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light yellow-background-colored" id="top">
         <a class="navbar-brand" href="#">
             <img src="./img/logo.png" alt="">
         </a>
@@ -166,21 +214,16 @@
         </div>
     </nav>
 
-
-
-
     <div class="container-fluid hero">
-        <div class="row justify-content-start align-items-center" style="height: 90vh; background-color: #ffd607;">
-            <div class="col-8 welcome-text" style="color: #35357d; padding-left: 5rem; ">
-                <p class="hero-text">
-                    Don't be a </p>
-                <span style="font-size: 10rem; font-weight: 900; line-height: 5rem;">FLICKING</span>
-                <p class="hero-text" style="line-height: 10rem;">idiot
-                </p>
+        <div class="row justify-content-start align-items-center yellow-background-colored vh-90">
+            <div class="col-8 welcome-text">
+                <p class="hero-text">Don't be a </p>
+                <span class="flicking-text">FLICKING</span>
+                    <p class="hero-text">idiot</p>
                 <p>Think about us.</p>
             </div>
             <div class="col-4 text-right pr-0">
-                <img data-aos="fade-up" src="./img/rak.png" alt="" style="height: 90vh;">
+                <img data-aos="fade-up" src="./img/rak.png" alt="" class="vh-90">
             </div>
         </div>
     </div>
@@ -188,11 +231,11 @@
 
     <div class="container-fluid text-center">
         <div class="row justify-content-center align-items-center" style="height: 100vh">
-            <div class="row justify-content-center align-items-start" style="width: 100%;">
+            <div class="row justify-content-center align-items-start w-100" style="width: 100%;">
                 <div class="col-lg-4">
                     <h1 class="item" id="percentage">84</h1>
                     <div>
-                        <h5 style="color: #35357d;">
+                        <h5 class="purple-colored">
                             Percentage of butts<br>
                             are being littered
                         </h5>
@@ -202,7 +245,7 @@
                 <div class="col-lg-4">
                     <h1 class="item" id="perSecond">150000</h1>
                     <div>
-                        <h5 style="color: #35357d;">
+                        <h5 class="purple-colored">
                             Butts are littered<br>per second
                         </h5>
                     </div>
@@ -211,7 +254,7 @@
                 <div class="col-lg-4">
                     <h1 class="item" id="years">10</h1>
                     <div id="ourCampaign">
-                        <h5 style="color: #35357d;">
+                        <h5 class="purple-colored">
                             There may be more cigarette butts<br>in the ocean than fish
                         </h5>
                     </div>
@@ -223,7 +266,7 @@
     <div class="container" id="ourCampaign">
         <div class="row justify-content-start align-items-center" style="height: 100vh;">
             <div class="col-lg-8">
-                <h1 style="color: #35357d; font-weight: 700; margin-bottom: 1rem;">Our campaign</h1>
+                <h1 class="menu-text">Our campaign</h1>
                 <div id="machines">
                     The main goal of our campaign is to change people's attitude<br>
                     about cigarette butts. We have to stop polluting the enviroment<br>
@@ -242,17 +285,17 @@
     <div class="container" id="machines">
         <div class="row align-items-center" style="height: 100vh;">
             <div class="col">
-                <h1 style="color: #35357d; font-weight: 700">Machines</h1>
+                <h1 class="menu-text">Machines</h1>
                 <div class="row align-items-middle">
                     <div class="col text-center">
                         <img src="img/machine.png" alt="" ">
                         <div>
-                            <h5 style="color: #f66e96">
+                            <h5 class="pink-colored">
                                 Recycling machine
                             </h5>
                         </div>
                         <div>
-                            <p style="color: #35357d">
+                            <p class="purple-colored">
                                 Get locally collectible rewards such<br>
                                 as discount vouchers, donation<br>
                                 to charities or other<br>
@@ -263,10 +306,10 @@
                     <div class="col text-center">
                         <img src="img/disposer.png" alt="" ">
                         <div>
-                            <h5 style="color: #f66e96">Filter disposer</h5>
+                            <h5 class="pink-colored">Filter disposer</h5>
                         </div>
                         <div>
-                            <p style="color: #35357d">
+                            <p sclass="purple-colored">
                                 Throw your butts into one of out<br>
                                 frequently placed disposer and<br>
                                 receive a nice message that<br>
@@ -282,48 +325,42 @@
     <div class="container" style="margin-bottom: 8rem;" id="getInvolved">
         <div class="row justify-content-start align-items-center" style="height: 60vh; width: 90vw;">
             <div class="col">
-                <h1 style="color: #35357d; font-weight: 700">Get involved</h1>
+                <h1 class="menu-text">Get involved</h1>
                 <div class="row justify-content-start align-items-center" style="height: 500px">
                     <div class="col text-center" style="left: -110px; top: 50px;">
                         <div>
-                            <img data-aos="zoom-out-right" src="img/cigi.png" style="margin-bottom: 1rem!important;" alt="Smiley face"
+                            <img data-aos="zoom-out-right" src="img/cigi.png" style="margin-bottom: 1rem!important;" alt=""
                                 height="250px" width="250px">
-                            <h5 style="color: #35357d">
-                                <strong>
+                            <h5 class="menu-text">
                                     Collect the butts
-                                </strong>
                             </h5>
                         </div>
                     </div>
-                    <div class="col" style="left: -120px; top: 0px; transform: rotate(12deg);">
+                    <div class="col arrow-first">
                         <div>
-                            <img data-aos="fade" src="img/arrow.png" alt="Smiley face" height="150px" width="150px">
+                            <img data-aos="fade" src="img/arrow.png" alt="" height="150px" width="150px">
                         </div>
                     </div>
                     <div class="col text-center" style="left: -270px; top: -50px;">
                         <div>
-                            <img data-aos="zoom-out-down" src="img/recycle.png" style="margin-bottom: 1rem!important;" alt="Smiley face"
+                            <img data-aos="zoom-out-down" src="img/recycle.png" class="mb-3" alt=""
                                 height="250px" width="250px">
-                            <h5 style="color: #35357d">
-                                <strong>
+                            <h5 class="menu-text">
                                     Throw them into the machines
-                                </strong>
                             </h5>
                         </div>
                     </div>
-                    <div class="col" style="left: -320px; top: 30px; transform: rotate(65deg);">
+                    <div class="col arrow-second">
                         <div>
-                            <img data-aos="fade" src="img/arrow.png" alt="Smiley face" height="150px" width="150px">
+                            <img data-aos="fade" src="img/arrow.png" alt="" height="150px" width="150px">
                         </div>
                     </div>
                     <div class="col text-center" style="left: -450px; top: 200px;">
                         <div style="width: 250px">
-                            <img data-aos="zoom-out-left" src="img/kupon.png" style="margin-bottom: 1rem!important;" alt="Smiley face"
+                            <img data-aos="zoom-out-left" src="img/kupon.png" class="mb-3" alt=""
                                 height="250px" width="250px">
-                            <h5 style="color: #35357d; font-weight: 700">
-                                <strong>
+                            <h5 class="menu-text">
                                     Get your reward
-                                </strong>
                             </h5>
                         </div>
                     </div>
@@ -334,11 +371,11 @@
 
     <div class="container" id="actNow">
         <div class="row justify-content-start align-items-center">
-            <div class="col-6">
-                <h1 style="color: #35357d; font-weight: 700">Act now</h1>
+            <div class="col-7">
+                <h1 class="menu-text">Act now</h1>
                 <div>
-                    <p style="color: #878787">
-                        The aim of our campaign ti change people's attitude about cigarette butt
+                    <p class="grey-colored">
+                        The aim of our campaign is to change people's attitude about cigarette butt
                         flicking. It is not not cool to pollute the envinronment with filter that are
                         comprised of thousands of chemical ingredients including arsenic, lead and
                         nicotine.
@@ -348,12 +385,12 @@
         </div>
         <div class="row justify-content-start align-items-center">
             <div class="col">
-                <img data-aos="fade" src="img/map.png" width="100%" height="auto" alt="Smiley face">
+                <img data-aos="fade" src="img/map.png" width="100%" height="auto" alt="">
             </div>
         </div>
     </div>
     <div class="container_fluid text-center" style="margin-top: 3rem;">
-        <img src="img/footer.png" alt="Smiley face">
+        <img src="img/footer.png" alt="">
     </div>
     
     <script>
