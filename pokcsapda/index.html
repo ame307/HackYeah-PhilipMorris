@@ -12,14 +12,16 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/aos.css">
+
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    <script type="script" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/aos.js"></script>
     <script type="module" src="./js/countUp.js"></script>
 
     <style>
@@ -95,16 +97,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav justify-content-end d-flex flex-fill">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our campaign</a>
+                    <a class="nav-link" href="#ourCampaign">Our campaign</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Machines</a>
+                    <a class="nav-link" href="#machines">Machines</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Recycling</a>
+                    <a class="nav-link" href="#getInvolved">Get involved</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Get involved</a>
+                    <a class="nav-link" href="#actNow">Act now</a>
                 </li>
             </ul>
         </div>
@@ -124,7 +126,7 @@
                 <p>Think about us.</p>
             </div>
             <div class="col-4 text-right pr-0">
-                <img src="./img/rak.png" alt="" style="height: 90vh;">
+                <img data-aos="fade-up" src="./img/rak.png" alt="" style="height: 90vh;">
             </div>
         </div>
     </div>
@@ -145,7 +147,7 @@
 
                 <div class="col-lg-4">
                     <h1 class="item" id="years">10</h1>
-                    <div>There may be more cigarette butts<br>in the ocean than fish</div>
+                    <div id="ourCampaign">There may be more cigarette butts<br>in the ocean than fish</div>
                 </div>
             </div>
         </div>
@@ -155,7 +157,7 @@
         <div class="row justify-content-start align-items-center" style="height: 500px">
             <div class="col-lg-8">
                 <h1 style="color: #35357d">Our campaign</h1>
-                <div>
+                <div id="machines">
                     The main goal of our campaign is to change people's attitude<br>
                     about cigarette butts. We have to stop polluting the enviroment<br>
                     with filter that are made of thousands of chemicals like arsenic,<br>
@@ -165,7 +167,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <img src="./img/madar.png" alt="">
+                <img data-aos="fade-left" src="./img/madar.png" alt="">
             </div>
         </div>
     </div>
@@ -174,7 +176,7 @@
         <div class="row align-items-center" style="height: 500px;">
             <div class="col">
                 <h1 style="color: #35357d">Machines</h1>
-                <div class="row align-items-middle">
+                <div class="row align-items-middle" id="machines">
                     <div class="col text-center">
                         <img src="" alt="">
                         <div>
@@ -210,7 +212,7 @@
         </div>
     </div>
 
-    <div class="container" style="margin-bottom: 8rem;">
+    <div class="container" style="margin-bottom: 8rem;" id="getInvolved">
         <div class="row justify-content-start align-items-center" style="height: 60vh; width: 90vw;">
             <div class="col">
                 <h1 style="color: #35357d">Get involved</h1>
@@ -263,7 +265,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="actNow">
         <div class="row justify-content-start align-items-center">
             <div class="col-6">
                 <h1 style="color: #35357d">Act now</h1>
@@ -279,12 +281,15 @@
         </div>
         <div class="row justify-content-start align-items-center">
             <div class="col">
-                <img src="img/map.png" width="100%" height="auto" alt="Smiley face">
+                <img data-aos="fade" src="img/map.png" width="100%" height="auto" alt="Smiley face">
             </div>
         </div>
     </div>
     <div class="container_fluid text-center" style="margin-top: 3rem;">
         <img src="img/footer.png" alt="Smiley face">
     </div>
-
+    
+    <script>
+        AOS.init();
+    </script>
 </html>
