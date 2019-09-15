@@ -17,7 +17,7 @@
 
     <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    
+
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
@@ -63,7 +63,7 @@
             padding-right: 5rem;
         }
 
-        .yellow-background-colored{
+        .yellow-background-colored {
             background-color: #ffd607 !important;
         }
 
@@ -82,8 +82,8 @@
 
         .welcome-text {
             font-size: 26px;
-            color: #35357d; 
-            padding-left: 5rem; 
+            color: #35357d;
+            padding-left: 5rem;
         }
 
         .hero-text {
@@ -93,13 +93,13 @@
         }
 
         .flicking-text {
-            font-size: 10rem; 
-            font-weight: 900; 
+            font-size: 10rem;
+            font-weight: 900;
             line-height: 5rem;
         }
 
         .menu-text {
-            font-weight: 700; 
+            font-weight: 700;
             margin-bottom: 1rem;
             color: #35357d !important;
         }
@@ -124,7 +124,7 @@
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
             z-index: 0;
-            
+
         }
 
         #return-to-top i {
@@ -150,35 +150,55 @@
             top: 5px;
         }
 
-        .purple-colored{
+        .purple-colored {
             color: #35357d !important;
         }
 
-        .pink-colored{
+        .pink-colored {
             color: #f66e96 !important;
         }
 
-        .grey-colored{
+        .grey-colored {
             color: #878787 !important;
         }
 
         .vh-90 {
-           height: 90vh;
+            height: 90vh;
         }
 
         .arrow-first {
-            left: -120px; 
-            top: 0px; 
+            left: -120px;
+            top: 0px;
             transform: rotate(12deg);
         }
 
         .arrow-second {
-            left: -320px; 
+            left: -320px;
             top: 30px;
             transform: rotate(65deg);
         }
 
+        @media screen and (max-width: 1200px) {
+            #welcome-img {
+                visibility: hidden;
+            }
 
+        }
+
+        @media (min-width: 992px) {
+            .item{
+                margin-top: 10rem;
+            }
+
+            .arrow-first{
+                visibility: hidden;
+            }
+
+            .arrow-second{
+                visibility: hidden;
+            }
+
+        }
     </style>
 </head>
 
@@ -187,13 +207,13 @@
 
     <a class="scroll_to" href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
-    <nav class="navbar navbar-expand-lg navbar-light yellow-background-colored" id="top">
+    <nav class="navbar navbar-expand-xl navbar-light yellow-background-colored" id="top">
         <a class="navbar-brand" href="#">
             <img src="./img/logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -219,18 +239,18 @@
             <div class="col-8 welcome-text">
                 <p class="hero-text">Don't be a </p>
                 <span class="flicking-text">FLICKING</span>
-                    <p class="hero-text">idiot</p>
+                <p class="hero-text">idiot</p>
                 <p>Think about us.</p>
             </div>
             <div class="col-4 text-right pr-0">
-                <img data-aos="fade-up" src="./img/rak.png" alt="" class="vh-90">
+                <img data-aos="fade-up" id="welcome-img" src="./img/rak.png" alt="" class="vh-90">
             </div>
         </div>
     </div>
 
 
     <div class="container-fluid text-center">
-        <div class="row justify-content-center align-items-center" style="height: 100vh">
+        <div class="row justify-content-center align-items-center" style="height: 50vh">
             <div class="row justify-content-center align-items-start w-100" style="width: 100%;">
                 <div class="col-lg-4">
                     <h1 class="item" id="percentage">84</h1>
@@ -276,7 +296,7 @@
                     Collect butts, put them into the machines and get rewards.
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 text-center">
                 <img data-aos="fade-left" src="./img/madar.png" alt="">
             </div>
         </div>
@@ -288,38 +308,38 @@
                 <h1 class="menu-text">Machines</h1>
                 <div class="row align-items-middle">
                     <div class="col text-center">
-                        <img src="img/machine.png" alt="" ">
+                        <img data-aos="fade-up-right" src="img/machine.png" alt="" ">
                         <div>
-                            <h5 class="pink-colored">
-                                Recycling machine
-                            </h5>
-                        </div>
-                        <div>
-                            <p class="purple-colored">
-                                Get locally collectible rewards such<br>
-                                as discount vouchers, donation<br>
-                                to charities or other<br>
-                                kinds of discounts.
-                            </p>
-                        </div>
+                            <h5 class=" pink-colored">
+                        Recycling machine
+                        </h5>
                     </div>
-                    <div class="col text-center">
-                        <img src="img/disposer.png" alt="" ">
-                        <div>
-                            <h5 class="pink-colored">Filter disposer</h5>
-                        </div>
-                        <div>
-                            <p sclass="purple-colored">
-                                Throw your butts into one of out<br>
-                                frequently placed disposer and<br>
-                                receive a nice message that<br>
-                                makes your day brighter.
-                            </p>
-                        </div>
+                    <div>
+                        <p class="purple-colored">
+                            Get locally collectible rewards such<br>
+                            as discount vouchers, donation<br>
+                            to charities or other<br>
+                            kinds of discounts.
+                        </p>
                     </div>
+                </div>
+                <div class="col text-center">
+                    <img data-aos="fade-down-left" src="img/disposer.png" alt="" ">
+                        <div>
+                            <h5 class=" pink-colored">Filter disposer</h5>
+                </div>
+                <div>
+                    <p sclass="purple-colored">
+                        Throw your butts into one of out<br>
+                        frequently placed disposer and<br>
+                        receive a nice message that<br>
+                        makes your day brighter.
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 
     <div class="container" style="margin-bottom: 8rem;" id="getInvolved">
@@ -329,10 +349,10 @@
                 <div class="row justify-content-start align-items-center" style="height: 500px">
                     <div class="col text-center" style="left: -110px; top: 50px;">
                         <div>
-                            <img data-aos="zoom-out-right" src="img/cigi.png" style="margin-bottom: 1rem!important;" alt=""
-                                height="250px" width="250px">
+                            <img data-aos="zoom-out-right" src="img/cigi.png" style="margin-bottom: 1rem!important;"
+                                alt="" height="250px" width="250px">
                             <h5 class="menu-text">
-                                    Collect the butts
+                                Collect the butts
                             </h5>
                         </div>
                     </div>
@@ -343,10 +363,10 @@
                     </div>
                     <div class="col text-center" style="left: -270px; top: -50px;">
                         <div>
-                            <img data-aos="zoom-out-down" src="img/recycle.png" class="mb-3" alt=""
-                                height="250px" width="250px">
+                            <img data-aos="zoom-out-down" src="img/recycle.png" class="mb-3" alt="" height="250px"
+                                width="250px">
                             <h5 class="menu-text">
-                                    Throw them into the machines
+                                Throw them into the machines
                             </h5>
                         </div>
                     </div>
@@ -357,10 +377,10 @@
                     </div>
                     <div class="col text-center" style="left: -450px; top: 200px;">
                         <div style="width: 250px">
-                            <img data-aos="zoom-out-left" src="img/kupon.png" class="mb-3" alt=""
-                                height="250px" width="250px">
+                            <img data-aos="zoom-out-left" src="img/kupon.png" class="mb-3" alt="" height="250px"
+                                width="250px">
                             <h5 class="menu-text">
-                                    Get your reward
+                                Get your reward
                             </h5>
                         </div>
                     </div>
@@ -392,8 +412,9 @@
     <div class="container_fluid text-center" style="margin-top: 3rem;">
         <img src="img/footer.png" alt="">
     </div>
-    
+
     <script>
         AOS.init();
     </script>
+
 </html>
